@@ -4,7 +4,7 @@ function wVal($min, $max, $suffix='px') {
 }
 
 $triangles = [
-	'count' => 100,
+	'count' => 50,
 	'brd' => [100, 600],
 	'skew' => 45,
 	'rotate' => 45,
@@ -23,8 +23,8 @@ $variants = [
 $style = '';
 for ($i=1; $i <= $triangles['count']; $i++) {
 	$size = str_replace(['w1', 'w2', 'w3', '##'],[
-			wVal($triangles['brd'][0], $triangles['brd'][1]), 
-			wVal($triangles['brd'][0], $triangles['brd'][1]), 
+			wVal($triangles['brd'][0], $triangles['brd'][1]),
+			wVal($triangles['brd'][0], $triangles['brd'][1]),
 			wVal($triangles['brd'][0], $triangles['brd'][1]),
 			intval(wVal($triangles['opacity'][0], $triangles['opacity'][1], '')) / 10
 		], $variants[rand(0,count($variants)-1)]
@@ -46,7 +46,6 @@ for ($i=1; $i <= $triangles['count']; $i++) {
 <title>UNFUNKED+</title>
 <meta name="description" content="UFDX" />
 <meta name="robots" content="noodp" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
 <meta property="og:title" content="UNFUNKED" />
 <meta property="og:type" content="website" />
